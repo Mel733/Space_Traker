@@ -1,0 +1,36 @@
+body{
+    margin: 0; /*enlève les marges autour*/
+    min-height: 100vh; 
+    background-image: url(../img/bg.jpg); /*le background est une image*/
+    background-size: cover; /*l'image prend tout l'espace*/
+    position: relative;
+    overflow: hidden; /*ce qui dépasse du body est caché*/
+}
+
+#compteur{
+    margin: 0;
+    font-size: 32px ;
+    font-weight: 700;
+    color: white;
+}
+
+#piece{
+    position: absolute; /*place la pièce par rapport à son parent, sans cela le déplacement ne marche plus*/
+   
+
+}
+
+#soucoupe{
+    position: absolute; /*place la soucoupe par rapport à son parent, sans cela le déplacement ne marche plus*/
+}
+
+#cercle-curseur {
+    position: fixed; /*se positionne par rapport à la fenêtre*/
+    width: 60px;
+    height: 60px;
+    border: 3px solid yellow;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 5;
+  
+}
